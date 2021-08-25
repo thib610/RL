@@ -1,6 +1,6 @@
 import Tictactoe_class
 import pickle
-import Agent
+import Agent_class
 
 # load IA saved
 with open('P1_IA.pickle', 'rb') as handle:
@@ -11,7 +11,7 @@ with open('P2_IA.pickle', 'rb') as handle:
 
 # initialisation of the agent
 # -1 id of the agent, 1 epsilon (choose only bes move), 1 placeholder
-p1 = Agent.Agent(-1, 1, 1)
+p1 = Agent_class.Agent(-1, 1, 1)
 p1.q_values = p1_qval
 
 # launch of the game

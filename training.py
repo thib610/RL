@@ -1,5 +1,5 @@
 import Tictactoe_class
-import Agent
+import Agent_class
 from timeit import default_timer as timer
 import pickle
 
@@ -10,8 +10,8 @@ epsilon_greed = 0.85
 nb_games = 1000000
 
 # initialisation of agents
-p1 = Agent.Agent(-1, epsilon_greed, lr)
-p2 = Agent.Agent(1, epsilon_greed, lr)
+p1 = Agent_class.Agent(-1, epsilon_greed, lr)
+p2 = Agent_class.Agent(1, epsilon_greed, lr)
 
 # training of agents
 start = timer()

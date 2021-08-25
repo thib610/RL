@@ -35,6 +35,11 @@ def ia_vs_human(ia):
     game = Tictactoe()
     check = 0  # check have different value depending of the state of the game
     ia.epsilon = 1  # make the ia choose only best move
+    print("IA token:",  ia.id)
+    if ia.id == -1:
+        print("your token:", 1)
+    else:
+        print("your token:", -1)
     while check == 0:
         if turn % 2 == 0:  # ia turn
             next_move = ia.get_next_move(game.board)
@@ -43,7 +48,7 @@ def ia_vs_human(ia):
             print(game.board)
             valx = input("Enter your x: ")
             valy = input("Enter your y: ")
-            game.make_move(1, np.array([int(valx), int(valy)]))
+            game.make_move(1, np.array([int(valx)-1, int(valy)-1]))
         check = game.check_end()
         turn += 1
     print(game.board)  # print last state of the game
