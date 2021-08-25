@@ -14,7 +14,7 @@ for i in range(0, nb_games):
         print(i)
     Tictactoe_class.ia_versus(p1, p2)
 end = timer()
-print(end - start)
+print("training time", end - start)
 
 # save q_values of agents, check
 # p1 agent
