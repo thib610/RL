@@ -23,15 +23,15 @@ Run this file to launch the training, it will automaticly update the 2 pickle fi
 run this file to play against an IA.
 
 ### parameters.py
-Contains parameters of the algorithm
+Contains parameters of the algorithm.
 
 ### P1_IA.pickle
-contain the q_table of the agent 1
-basicly it contain the IA number one
+contain the q_table of the agent 1.
+basicly it contain the IA number one.
 
 ### P2_IA.pickle
-contain the q_table of the agent 2
-basicly it contain the IA number one
+contain the q_table of the agent 2.
+basicly it contain the IA number one.
 
 ## HOW TO PLAY AGAINST IA (pvp will be implement one day, maybe):
 ### Begining
