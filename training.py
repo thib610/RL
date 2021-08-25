@@ -2,23 +2,17 @@ import Tictactoe_class
 import Agent_class
 from timeit import default_timer as timer
 import pickle
-
-# Variable of the algorithm
-init = 0.5
-lr = 0.5
-epsilon_greed = 0.85
-nb_games = 1000000
-
+from parameters import *
 # initialisation of agents
-p1 = Agent_class.Agent(-1, epsilon_greed, lr)
-p2 = Agent_class.Agent(1, epsilon_greed, lr)
+p1 = Agent_class.Agent(-1)
+p2 = Agent_class.Agent(1)
 
 # training of agents
 start = timer()
 for i in range(0, nb_games):
     if i % 1000 == 0:
         print(i)
-    Tictactoe_class.play(p1, p2, init)
+    Tictactoe_class.ia_versus(p1, p2)
 end = timer()
 print(end - start)
 

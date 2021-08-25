@@ -1,22 +1,22 @@
 import numpy as np
 import random
-
+from parameters import *
 
 # launch game between  2 IA
 # p1 and p2: 2 agent
 # init: default value for Q_table item
-def ia_versus(p1, p2, init):
+def ia_versus(p1, p2):
     turn = random.randint(0, 1)
     game = Tictactoe()
     check = 0
     while check == 0:
         if turn % 2 == 0:
             next_move = p1.get_next_move(game.board)
-            p1.add_state(game.board, next_move, init)
+            p1.add_state(game.board, next_move)
             game.make_move(-1, next_move)
         else:
             next_move = p2.get_next_move(game.board)
-            p2.add_state(game.board, next_move, init)
+            p2.add_state(game.board, next_move)
             game.make_move(1, next_move)
         check = game.check_end()
         turn += 1
