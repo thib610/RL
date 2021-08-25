@@ -23,6 +23,12 @@ You will find differents parameter to modify at the begining of the file.
 ### pve.py:
 run this file to play against an IA.
 
+### P1_IA.pickle
+contain the q_table of the agent 1
+basicly it contain the IA number one
+### P2_IA.pickle
+contain the q_table of the agent 2
+basicly it contain the IA number one
 
 ## HOW TO PLAY AGAINST IA (pvp will be implement one day, maybe):
 ### Begining
