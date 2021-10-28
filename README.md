@@ -10,19 +10,19 @@
 
 
 ## Files
-### RL folder
+### RL folder:
 ### parameters.py
 Contains parameters of the algorithm.
 ### training.py:
 Run this file to launch the training, it will automaticly update the 2 pickle files.  
 
-### pve.py:
+### pve.py
 run this file to play against an IA.
 ### Folder classes:
-#### Agent_class.py:
+#### Agent_class.py
 file contain the agent class. An object of this class is an IA, after the initialisaton the IA must be train.  
 
-#### Tictactoe_class.py:
+#### Tictactoe_class.py
 this class is use to play the game. 
 
 ### Folder agent_model:
