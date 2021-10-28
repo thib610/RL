@@ -10,11 +10,25 @@
 
 
 ## Files
-### Agent_class.py:
+### Folder classes
+#### Agent_class.py:
 file contain the agent class. An object of this class is an IA, after the initialisaton the IA must be train.  
 
-### Tictactoe_class.py:
+#### Tictactoe_class.py:
 this class is use to play the game. 
+### parameters.py
+Contains parameters of the algorithm.
+
+
+### Folder agent_model
+#### P1_IA.pickle
+contain the q_table of the agent 1.
+basicly it contain the IA number one.
+
+#### P2_IA.pickle
+contain the q_table of the agent 2.
+
+
 
 ### training.py:
 Run this file to launch the training, it will automaticly update the 2 pickle files.  
@@ -22,15 +36,7 @@ Run this file to launch the training, it will automaticly update the 2 pickle fi
 ### pve.py:
 run this file to play against an IA.
 
-### parameters.py
-Contains parameters of the algorithm.
 
-### P1_IA.pickle
-contain the q_table of the agent 1.
-basicly it contain the IA number one.
-
-### P2_IA.pickle
-contain the q_table of the agent 2.
 basicly it contain the IA number one.
 
 ## HOW TO PLAY AGAINST IA (pvp will be implement one day, maybe):
